@@ -98,6 +98,51 @@ body {
   padding-top: 35px;
   padding-bottom: 35px;
 }
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* card related design start here */
+.section-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  column-gap: 30px;
+  row-gap: 30px;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  padding: 17px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+
+  /* max-width: 100%; */
+}
+
+.card-description {
+  width: 196px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: #787885;
+}
 
 /* media query start here */
 
@@ -161,5 +206,8 @@ body {
     align-content: center;
     margin-top: 50px;
     border: none;
+  }
+  .card-container {
+    grid-template-columns: repeat(1, 0fr);
   }
 }
